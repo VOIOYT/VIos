@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut Icon" type="x-icon" href="Logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Vios | Inventory Management</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#homepage" class="topnav-logo">Home</a>
+        <a href="#logout" class="right topnav-logout">Logout</a>
+    </div>
+        <!-- Enrollment Modal -->
+<!-- Enrollment Modal -->
+
+
+    <div class="container">
+        <h1>Inventory Manager</h1>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Shipment</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+        <div id="pagination">
+            <!-- Pagination controls will be dynamically added here -->
+        </div>
+        <button onclick="addRow()">Add Item</button>
+    </div>
+
+    <div id="codeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Enter Code</h2>
+            <input type="password" id="deleteCode" placeholder="Enter code">
+            <button onclick="checkCode()">Submit</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
